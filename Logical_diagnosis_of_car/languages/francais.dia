@@ -1,0 +1,64 @@
+Connecter
+Deconnecter
+Status
+Configuration
+Quitter
+Tentative de connection.
+Connection diagnostique OK
+Erreur de code à 5 bauds
+Time out du boitier.
+Fonction Receive erreur de SID
+La commande s'est bien passe
+Confirmation
+Commande KWP
+Envoi a l'ECU
+Recu de l'ECU
+Votre numéro de paramétre n'est pas un nombre héxadécimal
+Votre valeur de paramétre n'est pas un nombre décimal
+Erreur !
+Votre numéro de paramétre n'est pas possible
+Le numero de la table dans le fichier est mauvais
+Le numero de la ligne de la table dans le fichier est mauvais
+La table demandee n'hexiste pas
+Vous n'avez pas de port serie RS232
+Indéfini
+Langues
+Configuration Communication
+Langue par défaut
+Enregistrer
+Parametre
+Valeur
+Version
+Vitesse de diagnostique
+Mode de transmission
+Nombre de tentatives
+Duree de l'adresse
+Temps maxi entre l'adresse et la synchronisation
+Temps max entre la synchro et la clef 1
+Temps max entre la clef 1 et la clef 2
+Temps max entre la clef2\ et l'adresse\
+Temps max de Perte de communication
+Duree de maintient de communication
+Vous devez selectionner un boitier
+Boitiers
+Port COM
+Sauvegarde de fichier
+Lecteur
+Liste des fichiers
+Nom du fichier
+Type de fichier
+Annuler   
+Fermer
+Ouvrir un fichier
+Adresse (hex.)
+Nom
+Adresse physique
+Taille
+Position
+Default
+MIN
+MAX
+Valeur (déc.)    
+Le fichier n'est pas conforme.
+Delai entre l'adresse\ et la première requete
+Delai entre une reponse et une question

@@ -1,0 +1,33 @@
+2102;CO ou CC sur entrée bord sensible porte arrière (EBSPAV)
+2103;CO ou CC sur EV A (Isolement droit des coussins 3e essieux)
+2104;CO ou CC sur EV B (Isolement gauche des coussins 3e essieux)
+2105;CO ou CC sur EV C (vidange des coussins 3e essieux)
+2106;CO ou CC sur ED3ESS (capteur de pression des coussins du pont)
+2107;CO ou CC sur ED3ESS2 (capteur de pression des coussins 3e essieux)
+2110;CO ou CC sur sortie alimentation ECU (SALECU)
+2111;CO ou CC sur sortie demande démarrage moteur (SDEMO)
+2112;CO ou CC sur sortie retour niveau normal ELF (SNORMA)
+2113;CO ou CC sur sortie coupe batterie (SCOUB)
+2114;CO ou CC sur sortie alimentation VCM (SRALIM)
+2125;CO ou CC sur sortie feux anti brouillard gauche (SBRARG)
+2129;CO ou CC sur sortie Feux de stop gauche (SSTOPG)
+2133;CO ou CC sur sortie feux anti brouillard droit (SBRARD)
+2135;CO ou CC sur sortie feux de recul (SRECUL)
+2139;CO ou CC sur sortie Feux de stop droit (SSTOPD)
+2150;Time Out sur la trame CCVS-E
+2151;Time Out sur la trame ERC1-ER
+2153;Time Out sur la trame EEC2-E
+2154;Time Out sur la trame EEC1-E
+2155;Time Out sur la trame EFP-E
+2156;Time Out sur la trame ETP-E
+2157;Time Out sur la trame ETC2-T
+2158;Time Out sur la trame ERC1-D
+2159;Time Out sur la trame TCO1-S
+2160;Time Out sur la trame EBC1-A
+2161;Time Out sur la trame SWI2BC
+2162;Time Out sur la trame EBC5-A
+2163;Time Out sur la trame EBC2
+2190;Défaut alimentation +CB du CAMU
+2191;Perte de communication avec un ou plusieurs IOU
+2192;Défaut boitier IOU
+2193;Défaut Alimentation IOU

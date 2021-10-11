@@ -1,0 +1,111 @@
+<?xml:lang="fr" version="1.0" standalone="no"?>
+<!DOCTYPE ParamEEPROMDescr SYSTEM "ParamDesc.dtd">
+
+<ParamEEPROMDescr>
+
+   <ParamEEPROM-List>
+
+      <ParamEEPROM-PARM ID="[0000] P_Control"                                                     ADDRESS="0000" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0001] P_FuelLevelLowDw"                                              ADDRESS="0001" SIZE="8" POSITION="0" DEFAULT="10" MIN="0" MAX="250" VALUE="10" />
+      <ParamEEPROM-PARM ID="[0002] P_FuelLevelLowUp"                                              ADDRESS="0002" SIZE="8" POSITION="0" DEFAULT="20" MIN="0" MAX="250" VALUE="20" />
+      <ParamEEPROM-PARM ID="[0003] P_TFuelBas"                                                    ADDRESS="0003" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0004] P_NivUreeBasDw"                                                ADDRESS="0004" SIZE="8" POSITION="0" DEFAULT="10" MIN="0" MAX="255" VALUE="10" />
+      <ParamEEPROM-PARM ID="[0005] P_NivUreeBasUp"                                                ADDRESS="0005" SIZE="8" POSITION="0" DEFAULT="12" MIN="0" MAX="255" VALUE="12" />
+      <ParamEEPROM-PARM ID="[0006] P_TUreeBas"                                                    ADDRESS="0006" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0007] Libre"                                                         ADDRESS="0007" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0008] Libre"                                                         ADDRESS="0008" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0009] P_NivHuileLowDw"                                               ADDRESS="0009" SIZE="8" POSITION="0" DEFAULT="5" MIN="0" MAX="255" VALUE="5" />
+      <ParamEEPROM-PARM ID="[000A] P_NivHuileLowUp"                                               ADDRESS="000A" SIZE="8" POSITION="0" DEFAULT="10" MIN="0" MAX="255" VALUE="10" />
+      <ParamEEPROM-PARM ID="[000B] P_BarNivHuilBas"                                               ADDRESS="000B" SIZE="8" POSITION="0" DEFAULT="10" MIN="0" MAX="255" VALUE="10" />
+      <ParamEEPROM-PARM ID="[000C] P_BarNivHuilHaut"                                              ADDRESS="000C" SIZE="8" POSITION="0" DEFAULT="90" MIN="0" MAX="255" VALUE="90" />
+      <ParamEEPROM-PARM ID="[000D] P_THuileLow"                                                   ADDRESS="000D" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[000E] P_BarPresHuilBas"                                              ADDRESS="000E" SIZE="8" POSITION="0" DEFAULT="10" MIN="0" MAX="255" VALUE="10" />
+      <ParamEEPROM-PARM ID="[000F] P_BarPresHuilHau"                                              ADDRESS="000F" SIZE="8" POSITION="0" DEFAULT="90" MIN="0" MAX="255" VALUE="90" />
+      <ParamEEPROM-PARM ID="[0010] Libre"                                                         ADDRESS="0010" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0011] Libre"                                                         ADDRESS="0011" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0012] Libre"                                                         ADDRESS="0012" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0013] Libre"                                                         ADDRESS="0013" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0014] Libre"                                                         ADDRESS="0014" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0015] Libre"                                                         ADDRESS="0015" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0016] P_TPressAir1"                                                  ADDRESS="0016" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0017] P_TPressAir2"                                                  ADDRESS="0017" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0018] P_TPressAir3"                                                  ADDRESS="0018" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0019] Libre"                                                         ADDRESS="0019" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[001A] Libre"                                                         ADDRESS="001A" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[001B] Libre"                                                         ADDRESS="001B" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[001C] Libre"                                                         ADDRESS="001C" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[001D] P_DureeActivPopU"                                              ADDRESS="001D" SIZE="8" POSITION="0" DEFAULT="20" MIN="0" MAX="255" VALUE="20" />
+      <ParamEEPROM-PARM ID="[001E] P_Langue"                                                      ADDRESS="001E" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[001F] P_VehSpeedMin"                                                 ADDRESS="001F" SIZE="8" POSITION="0" DEFAULT="3" MIN="0" MAX="255" VALUE="3" />
+      <ParamEEPROM-PARM ID="[0020] P_BV_AUTO"                                                     ADDRESS="0020" SIZE="1" POSITION="0" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0021] P_RADIO"                                                       ADDRESS="0020" SIZE="1" POSITION="1" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0022] P_FMS"                                                         ADDRESS="0020" SIZE="1" POSITION="2" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0023] P_CAMERA"                                                      ADDRESS="0020" SIZE="1" POSITION="3" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0024] P_IVTM"                                                        ADDRESS="0041" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0025] P_ACC"                                                         ADDRESS="0020" SIZE="1" POSITION="5" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0026] libre"                                                         ADDRESS="0020" SIZE="1" POSITION="6" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0027] libre"                                                         ADDRESS="0020" SIZE="1" POSITION="7" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0028] P_TSpeedLim"                                                   ADDRESS="0021" SIZE="8" POSITION="0" DEFAULT="5" MIN="0" MAX="255" VALUE="5" />
+      <ParamEEPROM-PARM ID="[0029] P_TCruiseCtrl"                                                 ADDRESS="0022" SIZE="8" POSITION="0" DEFAULT="5" MIN="0" MAX="255" VALUE="5" />
+      <ParamEEPROM-PARM ID="[002A] P_TPTO"                                                        ADDRESS="0023" SIZE="8" POSITION="0" DEFAULT="5" MIN="0" MAX="255" VALUE="5" />
+      <ParamEEPROM-PARM ID="[002B] P_FuelTankVol"                                                 ADDRESS="0024" SIZE="8" POSITION="0" DEFAULT="48" MIN="0" MAX="255" VALUE="48" />
+      <ParamEEPROM-PARM ID="[002C] P_PTO1Val"                                                     ADDRESS="0025" SIZE="8" POSITION="0" DEFAULT="80" MIN="0" MAX="255" VALUE="80" />
+      <ParamEEPROM-PARM ID="[002D] P_PTO2Val"                                                     ADDRESS="0026" SIZE="8" POSITION="0" DEFAULT="100" MIN="0" MAX="255" VALUE="100" />
+      <ParamEEPROM-PARM ID="[002E] P_Param46"                                                     ADDRESS="0027" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[002F] P_Param47"                                                     ADDRESS="0028" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0030] P_Param48"                                                     ADDRESS="0029" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0031] P_Param49"                                                     ADDRESS="002A" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0032] P_Param50"                                                     ADDRESS="0032" SIZE="1" POSITION="0" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0033] P_Param51"                                                     ADDRESS="0032" SIZE="1" POSITION="1" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0034] P_Param52"                                                     ADDRESS="0032" SIZE="1" POSITION="2" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0035] P_Param53"                                                     ADDRESS="0032" SIZE="1" POSITION="3" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0036] P_Param54"                                                     ADDRESS="0033" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0037] P_Param55"                                                     ADDRESS="0032" SIZE="1" POSITION="4" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0038] P_Param56"                                                     ADDRESS="0032" SIZE="1" POSITION="5" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0039] P_Param57"                                                     ADDRESS="0032" SIZE="1" POSITION="6" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[003A] P_Param58"                                                     ADDRESS="0032" SIZE="1" POSITION="7" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[003B] P_Param59"                                                     ADDRESS="0034" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[003C] P_Param60"                                                     ADDRESS="0035" SIZE="1" POSITION="0" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[003D] P_Param61"                                                     ADDRESS="0035" SIZE="1" POSITION="1" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[003E] P_Param62"                                                     ADDRESS="0035" SIZE="1" POSITION="2" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[003F] P_Param63"                                                     ADDRESS="0035" SIZE="1" POSITION="3" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0040] P_Param64"                                                     ADDRESS="0036" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0041] P_Param65"                                                     ADDRESS="0035" SIZE="1" POSITION="4" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0042] P_Param66"                                                     ADDRESS="0035" SIZE="1" POSITION="5" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0043] P_Param67"                                                     ADDRESS="0035" SIZE="1" POSITION="6" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0044] P_Param68"                                                     ADDRESS="0035" SIZE="1" POSITION="7" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0045] P_Param69"                                                     ADDRESS="0037" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0046] P_Param70"                                                     ADDRESS="0038" SIZE="1" POSITION="0" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0047] P_Param71"                                                     ADDRESS="0038" SIZE="1" POSITION="1" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0048] P_Param72"                                                     ADDRESS="0038" SIZE="1" POSITION="2" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0049] P_Param73"                                                     ADDRESS="0038" SIZE="1" POSITION="3" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[004A] P_Param74"                                                     ADDRESS="0039" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[004B] P_Param75"                                                     ADDRESS="0038" SIZE="1" POSITION="4" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[004C] P_Param76"                                                     ADDRESS="0038" SIZE="1" POSITION="5" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[004D] P_Param77"                                                     ADDRESS="0038" SIZE="1" POSITION="6" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[004E] P_Param78"                                                     ADDRESS="0038" SIZE="1" POSITION="7" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[004F] P_Param79"                                                     ADDRESS="003A" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0050] P_Param80"                                                     ADDRESS="003B" SIZE="1" POSITION="0" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0051] P_Param81"                                                     ADDRESS="003B" SIZE="1" POSITION="1" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0052] P_Param82"                                                     ADDRESS="003B" SIZE="1" POSITION="2" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0053] P_Param83"                                                     ADDRESS="003B" SIZE="1" POSITION="3" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0054] P_Param84"                                                     ADDRESS="003C" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0055] P_Param85"                                                     ADDRESS="003B" SIZE="1" POSITION="4" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0056] P_Param86"                                                     ADDRESS="003B" SIZE="1" POSITION="5" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0057] P_Param87"                                                     ADDRESS="003B" SIZE="1" POSITION="6" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0058] P_Param88"                                                     ADDRESS="003B" SIZE="1" POSITION="7" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0059] P_Param89"                                                     ADDRESS="003D" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[005A] P_Param90"                                                     ADDRESS="003E" SIZE="1" POSITION="0" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[005B] P_Param91"                                                     ADDRESS="003E" SIZE="1" POSITION="1" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[005C] P_Param92"                                                     ADDRESS="003E" SIZE="1" POSITION="2" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[005D] P_Param93"                                                     ADDRESS="003E" SIZE="1" POSITION="3" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[005E] P_Param94"                                                     ADDRESS="003F" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+      <ParamEEPROM-PARM ID="[005F] P_Param95"                                                     ADDRESS="003E" SIZE="1" POSITION="4" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0060] P_Param96"                                                     ADDRESS="003E" SIZE="1" POSITION="5" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0061] P_Param97"                                                     ADDRESS="003E" SIZE="1" POSITION="6" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0062] P_Param98"                                                     ADDRESS="003E" SIZE="1" POSITION="7" DEFAULT="0" MIN="0" MAX="1" VALUE="0" />
+      <ParamEEPROM-PARM ID="[0063] P_Param99"                                                     ADDRESS="0040" SIZE="8" POSITION="0" DEFAULT="0" MIN="0" MAX="255" VALUE="0" />
+
+   </ParamEEPROM-List>
+
+</ParamEEPROMDescr>

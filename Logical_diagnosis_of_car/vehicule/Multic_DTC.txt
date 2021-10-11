@@ -1,0 +1,12 @@
+1701;EEProm Checksum failure
+1704;Moteur pas à pas HS
+1708;Voyant OBD HS
+170C;Bus off sur le CAN véhicule
+170D;Bus off CAN EBS
+170E;Bus off CAN Telma
+170F;Bus off CAN ASTRONIC
+1710;Bus off CAN VCM
+1711;Bus off CAN DCU
+1712;Bus off CAN ECM
+1713;Bus off CAN DTCO
+1714;Bus off CAN CAMU

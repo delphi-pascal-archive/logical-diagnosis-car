@@ -1,0 +1,64 @@
+Connect
+Disconnect
+Status
+Setting
+Exit
+Connection test
+Diagnostic connection OK
+5 Bauds Error
+Time Out of ECU
+SID Error
+The command is OK
+Confirmation
+KWP Commande
+Send to the ECU
+Receive to the ECU
+Your parameter number is not hexa
+Your parameter number is not decimal number
+Error !
+Your parameter number is impossible
+The table number is wrong
+The line number in the table is wrong
+The require table does'nt exist
+You don't have any serial port
+Undefine
+Languages
+Communication Setting
+default Language
+Save
+Parameter
+Value
+Versus
+Diagnostic speed
+Transmission mode
+Number of test
+Delai adress
+Maximum time between adress byte and sync byte
+Maximum time between SYNC byte and KEY1 byte
+Maximum time between KEY1 byte and KEY2 byte
+Maximum time between KEY2B byte and adress\ byte
+Time out
+Duration between two tester present
+You must select a ECU in the list
+ECU
+COM Port
+Save in File
+Drive
+List of file
+Name 
+File type
+Cancel
+Close
+Open a File
+Adress (hex.)
+Name
+Physical adress
+length
+Position
+Default
+MIN
+MAX
+Value (dec.)  
+Your file is wrong
+Delai between adress\ and first request
+Delai between response and a request

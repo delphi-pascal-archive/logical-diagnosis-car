@@ -1,0 +1,254 @@
+// This file is design to use with DiagKWP
+//
+// Vehicle : ACTIA CAMU E6 universal adresses
+// Date : 27/03/2009
+//
+
+// This section define the connection capability
+
+<CONNECTION>
+INTERFACE=DUMP; // Type of interface : DUMP,ELM327
+PROTOCOLE=ISO14230; // Type of protocol if interface is ELM327: ISO14230, CAN11B_500K,CAN11B_250K,CAN29B_500K,CAN29B_250K,SAEJ1939,J1850PWM,J1850VPN
+INIT=5Baud; // You connect the interface with 5Baud or Fast
+ECU_ID=10; // Adress of the ECU
+TOOL_ID=F1; // Address of the tool 
+SPEED=10400; // Choose the speed diagnostic 10400 is normal
+SESSION=81; // session type of diagnosis
+// all this command must send at the begining of the connection
+</CONNECTION>
+
+<MENU=ECU identification>
+ICO=5;
+TYPE=GRID/2; // You want a text list of string
+TITLE=Identification/Value;
+REPEAT=0; // You don't repeat reading
+<KWP>
+CDE=1A 80; // This is the Command to send
+TR=[0-255]/GR0=Identification Code/GR1=VAL_TXT; // when the ECU respond, we need to traduce it
+</KWP>
+<KWP>
+CDE=1A 91;
+TR=[0-255]/GR0=Fiat drawing N°/GR1=VAL_TXT;// TR-> traduce line; []-> all byte receive goes to the value
+</KWP>
+<KWP>
+CDE=1A 92;
+TR=[0-255]/GR0=ECU hardware N°/GR1=VAL_TXT; //GRx-> grid and x is column; VAL_TXT -> value is TEXT  
+</KWP>
+<KWP>
+CDE=1A 93;
+TR=[0-255]/GR0=ECU hardware version N°/GR1=VAL_TXT;
+</KWP>
+<KWP>
+CDE=1A 94;
+TR=[0-255]/GR0=ECU software N°/GR1=VAL_TXT;
+</KWP>
+<KWP>
+CDE=1A 95;
+TR=[0-255]/GR0=ECU software version N°/GR1=VAL_TXT;
+</KWP>
+<KWP>
+CDE=1A 96;
+TR=[0-255]/GR0=Omologation Code/GR1=VAL_TXT;
+</KWP>
+<KWP>
+CDE=1A 97;
+TR=[0-255]/GR0=ISO Code/GR1=VAL_TXT;
+</KWP>
+<KWP>
+CDE=1A 98;
+TR=[0-255]/GR0=Tester Code/GR1=VAL_TXT;
+</KWP>
+<KWP>
+CDE=1A 99;
+TR=[0-255]/GR0=Production date/GR1=VAL_TXT;
+</KWP>
+</MENU>
+
+<MENU=Actual data>
+ICO=2;
+TYPE=GRID/3;
+TITLE=Name of data/value/unit
+REPEAT=200;
+LG=ROW=1/GR0=Engine speed/GR2=RPM;
+LG=ROW=2/GR0=Accelerator position/GR2=%;
+LG=ROW=3/GR0=Main injection start/GR2=°|ang;
+LG=ROW=4/GR0=Pilot injection start/GR2=°|ang;
+LG=ROW=5/GR0=Main inject. time/GR2=µS;
+LG=ROW=6/GR0=Pilot inject. time/GR2=µS;
+LG=ROW=7/GR0=Diesel quantity/GR2=mg/injec.;
+LG=ROW=8/GR0=Target diesel pressure/GR2=BAR;
+LG=ROW=9/GR0=Diesel press. measured/GR2=BAR;
+LG=ROW=10/GR0=Pressure adjustment opening/GR2=%;
+LG=ROW=11/GR0=Target air mass/GR2=mg/injec.;
+LG=ROW=12/GR0=Air mass measured/GR2=mg/injec.;
+LG=ROW=13/GR0=EGR valve opening/GR2=%;
+LG=ROW=14/GR0=Overboost press. measured/GR2=mBAR;
+LG=ROW=15/GR0=Atmospheric pressure/GR2=mBAR;
+LG=ROW=16/GR0=Air temperature/GR2=°C;
+LG=ROW=17/GR0=Water temperature/GR2=°C;
+LG=ROW=18/GR0=Battery voltage/GR2=Volt;
+LG=ROW=19/GR0=Vehicle speed (from CAN)/GR2=km\h;
+LG=ROW=20/GR0=ADC atmospheric pressure/GR2=Volt;
+LG=ROW=21/GR0=ADC diesel pressure/GR2=Volt;
+LG=ROW=22/GR0=ADC accelerator posit. 1/GR2=Volt;
+LG=ROW=23/GR0=ADC accelerator posit. 2/GR2=Volt;
+LG=ROW=24/GR0=ADC overboost press./GR2=Volt;
+LG=ROW=25/GR0=Water temperature ADC/GR2=Volt;
+LG=ROW=26/GR0=Air temperature ADC/GR2=Volt;
+LG=ROW=27/GR0=ADC air mass/GR2=Volt;
+LG=ROW=28/GR0=Capacitor 1 voltage/GR2=Volt;
+LG=ROW=29/GR0=Capacitor 2 voltage/GR2=Volt;
+LG=ROW=30/GR0=Total Quantity Diesel/GR2=mg/injec.;
+LG=ROW=31/GR0=Flow modulat. throttle opening/GR2=%;
+LG=ROW=32/GR0=Overboost valve opening/GR2=%;
+<KWP>
+CDE=21 30;
+TR=[1-2]/ROW=1/GR1=VALUE; //LG=ROW=1/GR0=Engine speed/GR2=RPM;
+</KWP>
+<KWP>
+CDE=21 31;
+TR=[1-2]/V=0.01|0/ROW=2/GR1=VALUE; // Accelerator position
+</KWP>
+<KWP>
+CDE=21 32;
+TR=[1-2]/V=0.0234|0/ROW=3/GR1=VALUE; // Main injection start
+</KWP>
+<KWP>
+CDE=21 33;
+TR=[1-2]/V=0.0234|0/ROW=4/GR1=VALUE; // Pilot injection start
+</KWP>
+<KWP>
+CDE=21 34;
+TR=[1-2]/ROW=5/GR1=VALUE; // Main inject. time
+</KWP>
+<KWP>
+CDE=21 35;
+TR=[1-2]/ROW=6/GR1=VALUE; // Pilot injection time
+</KWP>
+<KWP>
+CDE=21 36;
+TR=[1-2]/V=0.01|0/ROW=7/GR1=VALUE; // Diesel quantity
+</KWP>
+<KWP>
+CDE=21 37;
+TR=[1-2]/V=0.1|0/ROW=8/GR1=VALUE; // Target diesel pressure
+</KWP>
+<KWP>
+CDE=21 38;
+TR=[1-2]/V=0.1|0/ROW=9/GR1=VALUE; // Diesel press. measured
+</KWP>
+<KWP>
+CDE=21 39;
+TR=[1-2]/V=0.01|0/ROW=10/GR1=VALUE; // Pressure adjustment opening
+</KWP>
+<KWP>
+CDE=21 3A;
+TR=[1-2]/V=0.1|0/ROW=11/GR1=VALUE; // Target air mass
+</KWP>
+<KWP>
+CDE=21 3B;
+TR=[1-2]/V=0.1|0/ROW=12/GR1=VALUE; // Air mass measured
+</KWP>
+<KWP>
+CDE=21 3C;
+TR=[1-2]/V=0.01|0/ROW=13/GR1=VALUE; // EGR valve opening
+</KWP>
+<KWP>
+CDE=21 3E;
+TR=[1-2]/V=1|0/ROW=14/GR1=VALUE; // Overboost press. measured
+</KWP>
+<KWP>
+CDE=21 40;
+TR=[1-2]/V=1|0/ROW=15/GR1=VALUE; // Atmospheric pressure
+</KWP>
+<KWP>
+CDE=21 41;
+TR=[1-2]/V=0.1|-273/ROW=16/GR1=VALUE; // Air temperature
+</KWP>
+<KWP>
+CDE=21 42;
+TR=[1-2]/V=0.1|-273/ROW=17/GR1=VALUE; // Water temperature
+</KWP>
+<KWP>
+CDE=21 43;
+TR=[1-2]/V=0.0023612|0.7/ROW=18/GR1=VALUE; // Battery voltage
+</KWP>
+<KWP>
+CDE=21 44;
+TR=[1-2]/V=0.01|0/ROW=19/GR1=VALUE; // Vehicle speed (from CAN)
+</KWP>
+<KWP>
+CDE=21 47;
+TR=[1-2]/V=0.004888|0/ROW=20/GR1=VALUE; // ADC atmospheric pressure
+</KWP>
+<KWP>
+CDE=21 48;
+TR=[1-2]/V=0.004888|0/ROW=21/GR1=VALUE; // ADC diesel pressure
+</KWP>
+<KWP>
+CDE=21 49;
+TR=[1-2]/V=0.004888|0/ROW=22/GR1=VALUE; // ADC accelerator posit. 1
+</KWP>
+<KWP>
+CDE=21 4A;
+TR=[1-2]/V=0.004888|0/ROW=23/GR1=VALUE; // ADC accelerator posit. 2
+</KWP>
+<KWP>
+CDE=21 4B;
+TR=[1-2]/V=0.004888|0/ROW=24/GR1=VALUE; // ADC overboost press.
+</KWP>
+<KWP>
+CDE=21 4C;
+TR=[1-2]/V=0.004888|0/ROW=25/GR1=VALUE; // ADC Water temperature
+</KWP>
+<KWP>
+CDE=21 4D;
+TR=[1-2]/V=0.004888|0/ROW=26/GR1=VALUE; // ADC Air temperature
+</KWP>
+<KWP>
+CDE=21 4E;
+TR=[1-2]/V=0.004888|0/ROW=27/GR1=VALUE; // ADC air mass
+</KWP>
+<KWP>
+CDE=21 4F;
+TR=[1-2]/V=0.0099747|0/ROW=28/GR1=VALUE; // Capacitor 1 voltage
+</KWP>
+<KWP>
+CDE=21 50;
+TR=[1-2]/V=0.0099747|0/ROW=29/GR1=VALUE; // Capacitor 2 voltage
+</KWP>
+<KWP>
+CDE=21 61;
+TR=[1-2]/V=0.01|0/ROW=30/GR1=VALUE; // Total Quantity Diesel
+</KWP>
+<KWP>
+CDE=21 63;
+TR=[1-2]/V=0.01|0/ROW=31/GR1=VALUE; // Flow modulat. throttle opening
+</KWP>
+<KWP>
+CDE=21 3F;
+TR=[1-2]/V=0.01|0/ROW=32/GR1=VALUE; // Overboost valve opening
+</KWP>
+</MENU>
+
+<MENU=Lecture DTC>
+ICO=6;
+TYPE=GRID/2;
+TITLE=Diagnostic Trouble Code/Explanation;
+REPEAT=0;
+<KWP>
+CDE=18 00 FF 00;
+TR=R2[0-2]/GR0=VAL_HEX/GR1=FILE(DOBLO_DTC.txt);
+</KWP>
+</MENU>
+
+<MENU=Effacement DTC>
+ICO=3;
+TYPE=CONFIRM;
+TITLE=Clear diagnostic trouble code;
+REPEAT=0;
+<KWP>
+CDE=14 FF 00;
+TR=;
+</KWP>
+</MENU>

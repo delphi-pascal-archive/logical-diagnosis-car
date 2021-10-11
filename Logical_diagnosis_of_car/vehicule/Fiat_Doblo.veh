@@ -1,0 +1,208 @@
+// This file is design to use with DiagKWP
+//
+// Vehicle : Fiat Doblo 1,9L Multijet
+// Date : 25/03/2009
+//
+
+// This section define the connection capability
+
+<CONNECTION>
+INTERFACE=ELM327; // Type of interface : DUMP,ELM327
+PROTOCOLE=ISO14230; // Type of protocol if interface is ELM327: ISO14230, CAN11B_500K,CAN11B_250K,CAN29B_500K,CAN29B_250K,SAEJ1939,J1850PWM,J1850VPN
+INIT=5Baud; // You connect the interface with 5Baud or Fast
+ECU_ID=10; // Adress of the ECU
+TOOL_ID=F1; // Address of the tool 
+SPEED=10400; // Choose the speed diagnostic 10400 is normal
+SESSION=81; // session type of diagnosis
+</CONNECTION>
+
+<MENU=ECU identification>
+ICO=5;
+TYPE=GRID/2; // You want a text list of string
+TITLE=Identification/Value;
+REPEAT=0; // You don't repeat reading
+<KWP>
+CDE=1A 80; // This is the Command to send
+TR=[0-255]/GR0=Identification Code/GR1=VAL_TXT; // when the ECU respond, we need to traduce it
+</KWP>
+<KWP>
+CDE=1A 91;
+TR=[0-255]/GR0=Fiat drawing N°/GR1=VAL_TXT;// TR-> traduce line; []-> all byte receive goes to the value
+</KWP>
+<KWP>
+CDE=1A 92;
+TR=[0-255]/GR0=ECU hardware N°/GR1=VAL_TXT; //GRx-> grid and x is column; VAL_TXT -> value is TEXT  
+</KWP>
+<KWP>
+CDE=1A 93;
+TR=[0-255]/GR0=ECU hardware version N°/GR1=VAL_TXT;
+</KWP>
+<KWP>
+CDE=1A 94;
+TR=[0-255]/GR0=ECU software N°/GR1=VAL_TXT;
+</KWP>
+<KWP>
+CDE=1A 95;
+TR=[0-255]/GR0=ECU software version N°/GR1=VAL_TXT;
+</KWP>
+<KWP>
+CDE=1A 96;
+TR=[0-255]/GR0=Omologation Code/GR1=VAL_TXT;
+</KWP>
+<KWP>
+CDE=1A 97;
+TR=[0-255]/GR0=ISO Code/GR1=VAL_TXT;
+</KWP>
+<KWP>
+CDE=1A 98;
+TR=[0-255]/GR0=Tester Code/GR1=VAL_TXT;
+</KWP>
+<KWP>
+CDE=1A 99;
+TR=[0-255]/GR0=Production date/GR1=VAL_TXT;
+</KWP>
+</MENU>
+
+<MENU=Dynamic Diagnostic>
+ICO=2;
+TYPE=GRID/3; // You want a grid with 3 column
+TITLE=Parameters/Value/Unit;
+REPEAT=1000; // You repeat reading all 1000 ms
+LG=ROW=1/GR0=Mil light;
+LG=ROW=2/GR0=Mil DTC Count;
+LG=ROW=3/GR0=Mil undecoded;
+LG=ROW=4/GR0=Fuel System Status : Open;
+LG=ROW=5/GR0=Fuel System Status : Closed;
+LG=ROW=6/GR0=Fuel System Status : Open driving;
+LG=ROW=7/GR0=Fuel System Status : Open Fault;
+LG=ROW=8/GR0=Fuel System Status : Closed Fault;
+LG=ROW=9/GR0=Calculated load value/GR2=%;
+LG=ROW=10/GR0=Engine coolant temperature/GR2=°C;
+LG=ROW=11/GR0=Short term fuel trim Bank1/GR2=%;
+LG=ROW=12/GR0=Long term fuel trim Bank1/GR2=%;
+LG=ROW=13/GR0=Short term fuel trim Bank2/GR2=%;
+LG=ROW=14/GR0=Long term fuel trim Bank1/GR2=%;
+LG=ROW=15/GR0=Fuel Pressure/GR2=kPaG;
+LG=ROW=16/GR0=Intake Manifold Pressure/GR2=kPaA;
+LG=ROW=17/GR0=Engine Speed/GR2=RPM;
+LG=ROW=18/GR0=Vehicule Speed/GR2=Km|h;
+LG=ROW=19/GR0=Ignition timing advance Cyl #1/GR2=deg;
+LG=ROW=20/GR0=Intake air Temperature/GR2=°C;
+LG=ROW=21/GR0=Air Flow Rate/GR2=gm|s;
+LG=ROW=22/GR0=Absolute throttle Position/GR2=%;
+LG=ROW=23/GR0=Commanded secondary Air Status;
+LG=ROW=24/GR0=Oxygen sensor location;
+LG=ROW=25/GR0=Bank 1 Sensor 1 Voltage/GR2=V;
+LG=ROW=26/GR0=Bank 1 Sensor 1 Trim/GR2=%;
+LG=ROW=27/GR0=Bank 1 Sensor 2 Voltage/GR2=V;
+LG=ROW=28/GR0=Bank 1 Sensor 2 Trim/GR2=%;
+LG=ROW=29/GR0=Bank 1 Sensor 3 Voltage/GR2=V;
+LG=ROW=30/GR0=Bank 1 Sensor 3 Trim/GR2=%;
+LG=ROW=31/GR0=Bank 1 Sensor 4 Voltage/GR2=V;
+LG=ROW=32/GR0=Bank 1 Sensor 4 Trim/GR2=%;
+LG=ROW=33/GR0=Bank 2 Sensor 1 Voltage/GR2=V;
+LG=ROW=34/GR0=Bank 2 Sensor 1 Trim/GR2=%;
+LG=ROW=35/GR0=Bank 2 Sensor 2 Voltage/GR2=V;
+LG=ROW=36/GR0=Bank 2 Sensor 2 Trim/GR2=%;
+LG=ROW=37/GR0=Bank 2 Sensor 3 Voltage/GR2=V;
+LG=ROW=38/GR0=Bank 2 Sensor 3 Trim/GR2=%;
+LG=ROW=39/GR0=Bank 2 Sensor 4 Voltage/GR2=V;
+LG=ROW=40/GR0=Bank 2 Sensor 4 Trim/GR2=%;
+LG=ROW=41/GR0=Auxiliariy Input Status;
+<KWP>
+CDE=01 01;
+TR=[2|7]/ROW=1/GR1=IMG_AMBER; // IMG_Amber -> you want see a amber light if the value is <> 0, if not, you see a unlight light;
+TR=[2|0-6]/ROW=2/GR1=VALUE;
+TR=[3-5]/ROW=3/GR1=VAL_HEX;
+</KWP>
+<KWP>
+CDE=01 03;
+TR=[2|0]/ROW=4/GR1=IMG_GREEN;
+TR=[2|1]/ROW=5/GR1=IMG_GREEN;
+TR=[2|2]/ROW=6/GR1=IMG_GREEN;
+TR=[2|3]/ROW=7/GR1=IMG_RED;
+TR=[2|4]/ROW=8/GR1=IMG_RED;
+</KWP>
+<KWP>
+CDE=01 04;
+TR=[2]/V=0.392157|0/ROW=9/GR1=VALUE;
+</KWP>
+<KWP>
+CDE=01 05;
+TR=[2]/V=|-40/ROW=10/GR1=VALUE;
+</KWP>
+<KWP>
+CDE=01 06;
+TR=[2]/V=0.78125|-100/ROW=11/GR1=VALUE;
+</KWP>
+<KWP>
+CDE=01 07;
+TR=[2]/V=0.78125|-100/ROW=12/GR1=VALUE;
+</KWP>
+<KWP>
+CDE=01 08;
+TR=[2]/V=0.78125|-100/ROW=13/GR1=VALUE;
+</KWP>
+<KWP>
+CDE=01 09;
+TR=[2]/V=0.78125|-100/ROW=14/GR1=VALUE;
+</KWP>
+<KWP>
+CDE=01 0A;
+TR=[2]/V=3|0/ROW=15/GR1=VALUE;
+</KWP>
+<KWP>
+CDE=01 0B;
+TR=[2]/ROW=16/GR1=VALUE;
+</KWP>
+<KWP>
+CDE=01 0C;
+TR=[2-3]/V=0.25|0/ROW=17/GR1=VALUE;
+</KWP>
+<KWP>
+CDE=01 0D;
+TR=[2]/ROW=18/GR1=VALUE;
+</KWP>
+<KWP>
+CDE=01 0E;
+TR=[2]/V=0.5|-64/ROW=19/GR1=VALUE;
+</KWP>
+<KWP>
+CDE=01 0F;
+TR=[2]/V=0|-40/ROW=20/GR1=VALUE; //GR0=Intake air Temperature
+</KWP>
+<KWP>
+CDE=01 10;
+TR=[2-3]/V=0.01|0/ROW=21/GR1=VALUE;
+</KWP>
+<KWP>
+CDE=01 11;
+TR=[2]/V=0.392157|0/ROW=22/GR1=VALUE;//GR0=Absolute throttle Position
+</KWP>
+<KWP>
+CDE=01 12;
+TR=[2]/ROW=23/GR1=VALUE;//GR0=Commanded secondary Air Status
+</KWP>
+</MENU>
+
+<MENU=Lecture DTC>
+ICO=6;
+TYPE=GRID/2;
+TITLE=Diagnostic Trouble Code/Explanation;
+REPEAT=0;
+<KWP>
+CDE=18 00 FF 00;
+TR=R2[0-2]/GR0=VAL_HEX/GR1=FILE(DOBLO_DTC.txt);
+</KWP>
+</MENU>
+
+<MENU=Effacement DTC>
+ICO=3;
+TYPE=CONFIRM;
+TITLE=Clear diagnostic trouble code;
+REPEAT=0;
+<KWP>
+CDE=14 FF 00;
+TR=;
+</KWP>
+</MENU>

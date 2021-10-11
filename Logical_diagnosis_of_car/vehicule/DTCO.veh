@@ -1,0 +1,304 @@
+// This file created by DiagKWP configurator v1.0.0
+
+<CONNECTION>
+INTERFACE=DUMP;
+PROTOCOLE=ISO14230;
+INIT=FAST;
+ECU_ID=EE;
+TOOL_ID=F0;
+SPEED=10400;
+SESSION=02; // session type of diagnosis
+TESTERPRESENT=3E 01;
+</CONNECTION>
+<MENU=Banieres>
+ICO=4;
+TYPE=GRID/2;
+TITLE=Baniere/Valeur;
+REPEAT=0;
+// Fix text zone
+LG=ROW=1/GR0=ECU Hardware Number/;
+LG=ROW=2/GR0=ECU Hardware Version number/;
+LG=ROW=3/GR0=ECU Software Number/;
+LG=ROW=4/GR0=ECU Software version number/;
+
+// click zone
+
+// Traduction zone
+<KWP>
+CDE=22 F1 92;
+TR=[2-65]/ROW=1/GR1=VAL_TXT;
+</KWP>
+<KWP>
+CDE=22 F1 93;
+TR=[2-65]/ROW=2/GR1=VAL_TXT;
+</KWP>
+<KWP>
+CDE=22 F1 94;
+TR=[2-65]/ROW=3/GR1=VAL_TXT;
+</KWP>
+<KWP>
+CDE=22 F1 95;
+TR=[2-65]/ROW=4/GR1=VAL_TXT;
+</KWP>
+
+</MENU>
+//
+//
+<MENU=Dynamique>
+ICO=4;
+TYPE=GRID/3;
+TITLE=Parametres/Valeur/Commentaires;
+REPEAT=200;
+// Fix text zone
+LG=ROW=1/GR0=Vitesse/GR2=Km\h;
+LG=ROW=2/GR0=Regime moteur/GR2=tr\min;
+LG=ROW=3/GR0=Vitesse de rotation en sortie de boite/GR2=tr\min;
+
+// click zone
+
+// Traduction zone
+<KWP>
+CDE=22 F9 02;
+TR=[2-3]/V=0.00390625/ROW=1/GR1=VALUE; // vitesse
+</KWP>
+<KWP>
+CDE=22 F9 5A;
+TR=[2-3]/V=0.125|0/ROW=2/GR1=VALUE; // regime moteur
+</KWP>
+<KWP>
+CDE=22 F9 1B;
+TR=[2-3]/V=0.125|0/ROW=3/GR1=VALUE; // vitesse de rotation en sortie de boite
+</KWP>
+</MENU>
+//
+//
+<MENU=Calibration>
+ICO=4;
+TYPE=GRID/3;
+TITLE=Parametres/Valeur/Commentaires;
+REPEAT=0;
+// Fix text zone
+LG=ROW=1/CL=FFFF00/GR0=# Date et Heure;
+LG=ROW=2/GR0=Secondes;
+LG=ROW=3/GR0=Minutes;
+LG=ROW=4/GR0=Heure;
+LG=ROW=5/GR0=Mois;
+LG=ROW=6/GR0=Jour;
+LG=ROW=7/GR0=Annee;
+LG=ROW=8/GR0=Offset Minutes;
+LG=ROW=9/GR0=Offset Heures;
+LG=ROW=10/CL=FFFF00/GR0=# Odometre;
+LG=ROW=11/GR0=Kilometrage total/GR2=Km;
+LG=ROW=12/GR0=Kilometrage partiel/GR2=Km;
+LG=ROW=13/CL=FFFF00/GR0=# Parametrage pour la vitesse;
+LG=ROW=14/GR0=K/GR2=pulse\km;
+LG=ROW=15/GR0=L/GR2=metres;
+LG=ROW=16/GR0=Tyre size;
+LG=ROW=17/GR0=Max speed/GR2=km\h;
+LG=ROW=18/GR0=Impulsion par tour;
+LG=ROW=19/GR0=W/GR2=Impulsion\m;
+
+// click zone
+<CLICK>
+CLK=,1/LIST/EXIT=/CASE=1,2-9/NAME=Ecriture de la date et de l'heure/TITLE=Date et heure/COR=0.25|0:1|0:1|0:1|0:0.25|0:1|1985:1|-125:1|-125/TYPE=8:8:8:8:8:8:8:8/CDE=2E F9 0B VALUE;
+CLK=,2/LIST/EXIT=/CASE=1,2-9/NAME=Ecriture de la date et de l'heure/TITLE=Date et heure/COR=0.25|0:1|0:1|0:1|0:0.25|0:1|1985:1|-125:1|-125/TYPE=8:8:8:8:8:8:8:8/CDE=2E F9 0B VALUE;
+CLK=,3/LIST/EXIT=/CASE=1,2-9/NAME=Ecriture de la date et de l'heure/TITLE=Date et heure/COR=0.25|0:1|0:1|0:1|0:0.25|0:1|1985:1|-125:1|-125/TYPE=8:8:8:8:8:8:8:8/CDE=2E F9 0B VALUE;
+CLK=,4/LIST/EXIT=/CASE=1,2-9/NAME=Ecriture de la date et de l'heure/TITLE=Date et heure/COR=0.25|0:1|0:1|0:1|0:0.25|0:1|1985:1|-125:1|-125/TYPE=8:8:8:8:8:8:8:8/CDE=2E F9 0B VALUE;
+CLK=,5/LIST/EXIT=/CASE=1,2-9/NAME=Ecriture de la date et de l'heure/TITLE=Date et heure/COR=0.25|0:1|0:1|0:1|0:0.25|0:1|1985:1|-125:1|-125/TYPE=8:8:8:8:8:8:8:8/CDE=2E F9 0B VALUE;
+CLK=,6/LIST/EXIT=/CASE=1,2-9/NAME=Ecriture de la date et de l'heure/TITLE=Date et heure/COR=0.25|0:1|0:1|0:1|0:0.25|0:1|1985:1|-125:1|-125/TYPE=8:8:8:8:8:8:8:8/CDE=2E F9 0B VALUE;
+CLK=,7/LIST/EXIT=/CASE=1,2-9/NAME=Ecriture de la date et de l'heure/TITLE=Date et heure/COR=0.25|0:1|0:1|0:1|0:0.25|0:1|1985:1|-125:1|-125/TYPE=8:8:8:8:8:8:8:8/CDE=2E F9 0B VALUE;
+CLK=,8/LIST/EXIT=/CASE=1,2-9/NAME=Ecriture de la date et de l'heure/TITLE=Date et heure/COR=0.25|0:1|0:1|0:1|0:0.25|0:1|1985:1|-125:1|-125/TYPE=8:8:8:8:8:8:8:8/CDE=2E F9 0B VALUE;
+CLK=,9/LIST/EXIT=/CASE=1,2-9/NAME=Ecriture de la date et de l'heure/TITLE=Date et heure/COR=0.25|0:1|0:1|0:1|0:0.25|0:1|1985:1|-125:1|-125/TYPE=8:8:8:8:8:8:8:8/CDE=2E F9 0B VALUE;
+CLK=,11/VALUE/EXIT=/CASE=1,11/NAME=Ecriture du kilometrage total/TITLE=Parametre Kilometrage total/DIV=0.005/TYPE=32H/CDE=2E F9 12 VALUE;
+CLK=,12/VALUE/EXIT=/CASE=1,12/NAME=Ecriture du kilometrage partiel/TITLE=Parametre Kilometrage partiel/DIV=0.005/TYPE=32H/CDE=2E F9 13 VALUE;
+CLK=,16/VALUE/EXIT=/CASE=1,16/NAME=Ecriture du paramètre Tire size/TITLE=Parametre Tyre Size/DIV=1/TYPE=16H/CDE=2E F9 21 VALUE;
+CLK=,18/VALUE/EXIT=/CASE=1,18/NAME=Ecriture du paramètre Impulsion par tour/TITLE=Parametre Impulsion par tour/DIV=0.001/TYPE=16H/CDE=2E F9 1E VALUE;
+CLK=,19/VALUE/EXIT=/CASE=1,19/NAME=Ecriture du paramètre W/TITLE=Parametre W/DIV=0.001/TYPE=16H/CDE=2E F9 1D VALUE;
+ VALUE;
+</CLICK>
+// Traduction zone
+<KWP>
+CDE=22 F9 0B; // Time date
+TR=[2]/V=0.25|0/ROW=2/GR1=VALUE; // secondes
+TR=[3]/ROW=3/GR1=VALUE; // minutes
+TR=[4]/ROW=4/GR1=VALUE; // heures
+TR=[5]/ROW=5/GR1=VALUE; // mois
+TR=[6]/V=0.25|0/ROW=6/GR1=VALUE; // jours
+TR=[7]/V=1|1985/ROW=7/GR1=VALUE; // Annees
+TR=[8]/V=1|-125/ROW=8/GR1=VALUE; // Local offset minutes
+TR=[9]/V=1|-125/ROW=9/GR1=VALUE; // Local Offset hours
+</KWP>
+<KWP>
+CDE=22 F9 12;
+TR=[2-5]/V=0.005|0/ROW=11/GR1=VALUE; // distance totale
+</KWP>
+<KWP>
+CDE=22 F9 13;
+TR=[2-5]/V=0.005|0/ROW=12/GR1=VALUE; // distance partielle
+</KWP>
+<KWP>
+CDE=22 F9 18;
+TR=[2-3]/ROW=14/GR1=VALUE; // paramètre K
+</KWP>
+<KWP>
+CDE=22 F9 1C; 
+TR=[2-3]/V=0.000125|0/ROW=15/GR1=VALUE; //L
+</KWP>
+<KWP>
+CDE=22 F9 21; 
+TR=[2-63]/ROW=16/GR1=VAL_TXT; //Tyre size
+</KWP>
+<KWP>
+CDE=22 F9 2C; 
+TR=[2-3]/V=0.00390625|0/ROW=17/GR1=VALUE; // Max Speed
+</KWP>
+<KWP>
+CDE=22 F9 1E; 
+TR=[2-3]/V=0.001|0/ROW=18/GR1=VALUE; // Pulse Per Revolution Output shaftspeed
+</KWP>
+<KWP>
+CDE=22 F9 1D; 
+TR=[2-3]/V=0.001|0/ROW=19/GR1=VALUE; // W
+</KWP>
+</MENU>
+//
+//
+<MENU=Appairage du capteur>
+ICO=7;
+TYPE=CONFIRM;
+TITLE=Etes vous sur de vouloir appairer ce capteur avec le controlographe ?;
+REPEAT=0;
+<KWP>
+CDE=21 10;
+TR=;
+</KWP>
+</MENU>
+//
+//
+<MENU=Driver 1>
+ICO=4;
+TYPE=GRID/3;
+TITLE=Parametres/Valeurs/Commentaires;
+REPEAT=0;
+// Fix text zone
+LG=ROW=1/GR0=Temps de conduite continu/GR2=Minutes;
+LG=ROW=2/GR0=Temps de conduite cumule entre la semaine d'avant et actuelle/GR2=Minutes;
+LG=ROW=3/GR0=Temps d'arret cumule/GR2=Minutes;
+LG=ROW=4/GR0=Duree de l'activite selectionnee/GR2=Minutes;
+LG=ROW=5/GR0=Etat de temps de conduite;
+LG=ROW=6/GR0=Mode de travail;
+LG=ROW=7/GR0=Carte conducteur;
+LG=ROW=8/GR0=Identification;
+LG=ROW=9/GR0=Nom;
+// click zone
+
+// Traduction zone
+<KWP>
+CDE=22 F9 23; 
+TR=[2-3]/ROW=1/GR1=VALUE; // Temps de conduite continu;
+</KWP>
+<KWP>
+CDE=22 F9 38; 
+TR=[2-3]/ROW=2/GR1=VALUE; // Temps de conduite cumule entre la semaine d'avant et actuelle
+</KWP>
+<KWP>
+CDE=22 F9 25; 
+TR=[2-3]/ROW=3/GR1=VALUE; // Temps d'arret cumule
+</KWP>
+<KWP>
+CDE=22 F9 27; 
+TR=[2-3]/ROW=4/GR1=VALUE; // Duree de l'activite selectionnee
+</KWP>
+
+<KWP>
+CDE=22 F9 06; 
+TR=[2]/ROW=5/GR1=[No time related,15m avant 4.5h,4.5h depasse,15m avant alerte 1,alerte 1 atteinte,15m avant alerte 2,alerte 2 atteinte]; //Etat de temps de conduite
+</KWP>
+<KWP>
+CDE=22 F9 03; 
+TR=[2]/ROW=6/GR1=[Repos,disponible,travail,conduite]; //Mode de travail
+</KWP>
+<KWP>
+CDE=22 F9 07; 
+TR=[2]/ROW=7/GR1=[carte absente,carte presente]; //présence carte
+</KWP>
+<KWP>
+CDE=22 F9 16; 
+TR=[2-65]/ROW=8/GR1=VAL_TXT; // Identification
+</KWP>
+<KWP>
+CDE=22 F9 31; 
+TR=[2-65]/ROW=9/GR1=VAL_TXT; // Nom
+</KWP>
+</MENU>
+//
+//
+<MENU=Driver 2>
+ICO=4;
+TYPE=GRID/3;
+TITLE=Parametres/Valeurs/Commentaires;
+REPEAT=0;
+// Fix text zone
+LG=ROW=1/GR0=Temps de conduite continu/GR2=Minutes;
+LG=ROW=2/GR0=Temps de conduite cumule entre la semaine d'avant et actuelle/GR2=Minutes;
+LG=ROW=3/GR0=Temps d'arret cumule/GR2=Minutes;
+LG=ROW=4/GR0=Duree de l'activite selectionnee/GR2=Minutes;
+LG=ROW=5/GR0=Etat de temps de conduite;
+LG=ROW=6/GR0=Mode de travail;
+LG=ROW=7/GR0=Carte conducteur;
+LG=ROW=8/GR0=Identification;
+LG=ROW=9/GR0=Nom;
+// click zone
+
+// Traduction zone
+<KWP>
+CDE=22 F9 24; 
+TR=[2-3]/ROW=1/GR1=VALUE; // Temps de conduite continu;
+</KWP>
+<KWP>
+CDE=22 F9 39; 
+TR=[2-3]/ROW=2/GR1=VALUE; // Temps de conduite cumule entre la semaine d'avant et actuelle
+</KWP>
+<KWP>
+CDE=22 F9 26; 
+TR=[2-3]/ROW=3/GR1=VALUE; // Temps d'arret cumule
+</KWP>
+<KWP>
+CDE=22 F9 28; 
+TR=[2-3]/ROW=4/GR1=VALUE; // Duree de l'activite selectionnee
+</KWP>
+<KWP>
+CDE=22 F9 09; 
+TR=[2]/ROW=5/GR1=[No time related,15m avant 4.5h,4.5h depasse,15m avant alerte 1,alerte 1 atteinte,15m avant alerte 2,alerte 2 atteinte]; //Etat de temps de conduite
+</KWP>
+<KWP>
+CDE=22 F9 04; 
+TR=[2]/ROW=6/GR1=[Repos,disponible,travail,conduite]; //Mode de travail
+</KWP>
+<KWP>
+CDE=22 F9 0A; 
+TR=[2]/ROW=7/GR1=[carte absente,carte presente]; //présence carte
+</KWP>
+<KWP>
+CDE=22 F9 17; 
+TR=[2-65]/ROW=8/GR1=VAL_TXT; // Identification
+</KWP>
+<KWP>
+CDE=22 F9 32; 
+TR=[2-65]/ROW=9/GR1=VAL_TXT; // Nom
+</KWP>
+</MENU>
+//
+//
+<MENU=Lecture DTC>
+ICO=4;
+TYPE=GRID/1;
+TITLE=;
+REPEAT=0;
+// Fix text zone
+
+// click zone
+
+// Traduction zone
+
+</MENU>
